@@ -96,9 +96,9 @@ $query_builder = TRUE;
 //);
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.100.150',
-	'username' => 'base',
-	'password' => 'asarango5000',
+	'hostname' => '104.128.64.217',
+	'username' => 'admin',
+	'password' => 'admin@2021*',
 	'database' => 'suit',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
@@ -114,5 +114,5 @@ $db['default'] = array(
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE,
-	'port' => 5433
+	'port' => 5432
 );
