@@ -26,6 +26,8 @@ class User extends REST_Controller {
      * url del servicio: http://192.168.100.150/codigneiter/index.php/User/login
      */ 
     public function login_post(){
+
+        libxml_disable_entity_loader(true);
         
         if(json_decode(file_get_contents('php://input'), true)){
             $data = json_decode(file_get_contents('php://input'), true);
