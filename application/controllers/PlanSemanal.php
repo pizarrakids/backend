@@ -24,10 +24,14 @@ class PlanSemanal extends REST_Controller {
     }
     
     public function planes_get(){
+        
         $token = $this->uri->segment(3);
         $registroId = $this->uri->segment(4);
         
         $perfil = $this->User_model->revisa_perfil_x_token($token);
+        
+//        print_r($perfil);
+//        die();
         
         if($perfil == FALSE){
             $respuesta = array(

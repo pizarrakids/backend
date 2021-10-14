@@ -27,9 +27,10 @@ class Registrosacademicos extends REST_Controller {
      * url del servicio: http://192.168.100.150/codigneiter/index.php/Registrosacademicos/registros/ZG9jZWluaTFAbWFpbC5jb20yMDIxMDMwMjE3Mjk0MA==
      */
     public function registros_get(){
-        
+       
         $token = $this->uri->segment(3);
         $registros = $this->RegistrosAcademicos_model->registros_academicos($token);
+    
         if( isset( $registros )){
             $respuesta = array(
                 'error' => FALSE,
