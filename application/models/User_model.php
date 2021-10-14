@@ -62,7 +62,7 @@ class User_model extends CI_Model{
         $query = $this->db->get();
         $resultado = $query->row();
 
-        if(count($resultado) > 0){
+        if(isset($resultado)){
             $resp = $resultado;
         }else{
             $resp = FALSE;

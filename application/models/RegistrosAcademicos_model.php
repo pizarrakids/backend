@@ -12,7 +12,6 @@ class RegistrosAcademicos_model extends CI_Model{
      * 
      */
     public function registros_academicos( $token ){
-        
         //consulta para adquiri perfil
         $this->db->select('acc_perfil.codigo');
         $this->db->from('acc_usuario');
