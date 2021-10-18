@@ -67,7 +67,12 @@ class PadreSitio_model extends CI_Model {
         $this->db->order_by("fecha_entrega desc");
         $query = $this->db->get();
         $deberes = $query->result();
-        if(count($deberes) > 0){
+//        if(count($deberes) > 0){
+//            return $deberes;
+//        }else{
+//            return false;
+//        }
+        if(isset($deberes)){
             return $deberes;
         }else{
             return false;
