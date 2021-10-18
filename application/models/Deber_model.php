@@ -48,7 +48,7 @@ class Deber_model extends CI_Model {
         $query = $this->db->get();
         $respuesta = $query->result();
 
-        if (count($respuesta > 0)) {
+        if (isset($respuesta)) {
             return $respuesta;
         } else {
             return null;
